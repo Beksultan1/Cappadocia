@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      @font-face {
+         font-family: 'Balgis';
+         src: url('Balqis 400.ttf');
+      }
+
+      * {
+         box-sizing: border-box;
+      }
+
+      body {
+         margin: 0;
+      }
+      .container,span {
+         margin: 0;
+         padding: 0;
+      }
+
+      header {
+         background-image: url(./Rectangle\ 43.jpg);
+         background-repeat: no-repeat;
+         background-size: cover;
+         width: 1920px;
+         height: 1080px;
+         position: relative;
+         margin: 0;
+         padding: 0;
+      }
+
+      .phone img {
+         width: 15px;
+         height: 15px;
+      }
+
+      .title h1 {
+         font-size: 250px;
+         color: #000000;
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         font-family: 'Balgis';
+         font-weight: 400;
+         font-style: normal;
+         line-height: 334px;
+      }
+
+      .text {
+         position: absolute;
+         font-size: 60px;
+         right: 460px;
+         bottom: 360px;
+         font-style: italic;
+      }
+
+      .ul {
+         font-size: 24px;
+         position: absolute;
+      }
+
+      .ul4 a,
+      .ul3 a {
+         text-decoration: none;
+      }
+
+      .ul2 {
+         margin-left: 360px;
+      }
+
+      .ul3 {
+         margin-right: 560px;
+      }
+
+      li {
+         display: inline;
+         margin-top: 72px;
+         margin-right: 100px;
+      }
+
+      h1,
+      h3 {
+         margin: 0;
+         padding: 0;
+      }
+
+      a {
+         color: #000000;
+      }
+
+      .title2 {
+         font-family: 'Balgis';
+         font-size: 96px;
+         font-weight: 300px;
+         font-style: normal;
+         margin: 200px 0 0 360px;
+         color: #E2AB3F;
+      }
+
+      .text2,
+      .text4,.text6,.text8,.text11{
+         font-size: 24px;
+         color: #000000;
+         font-style: italic;
+         line-height: 28px;
+      }
+
+      .text2 {
+         margin: 0 0 0 640px;
+      }
+
+      .contend {
+         display: flex;
+      }
+
+      .foto {
+         margin-top: 100px;
+      }
+
+      .text3 {
+         font-size: 18px;
+         line-height: 22px;
+         color: #000000;
+         margin: 150px 0 0 50px;
+      }
+
+      .text3 p {
+         margin-top: 50px;
+      }
+
+      h2 {
+         margin-top: 50px;
+      }
+
+      .text4 {
+         margin: 0 0 0 630px;
+      }
+
+      .foto2 {
+         margin: -160px 0 0 0;
+      }
+
+      .text5 {
+         margin: 0 310px 0 360px;
+         font-size: 24px;
+         line-height: 29px;
+         font-weight: 300;
+      }
+      button{
+         width: 280px;
+         height: 50px;
+         border: 1px solid  #E2AB3F;;
+      }
+      .text6{
+         margin: -100px 0 0 500px;
+      }
+      .foto3{
+         margin: 100px 0 0 362px;
+      }
+      .foto4{
+         margin: 50px 39px 0 0;
+      }
+     .foto4 span{
+      margin-right: 39px;
+     }
+     .text7,.text9,.text10{
+         font-size: 18px;
+         line-height: 22px;
+         color: #000000;     
+     }
+     .text7{
+      margin: 100px 0 0 50px;
+     }
+     .text8{
+      margin: 0 0 0 500px;
+     }
+     .text9{
+      margin-left: 360px;
+     }
+     .text9 p,.text10 p{
+      margin-top: 20px;
+     }
+     .text9 .A,.text10 .A{
+      margin-top: 50px;
+     }
+     .text10{
+      margin-left: 70px;
+     }
+     .item2{
+      margin-left: 150px;
+      margin-top: -300px;
+     }
+     .item3{
+      margin-left: 100px;
+     }
+     .item{
+      margin-top: 150px;
+     }
+     .text9 h2,.text10 h2{
+      margin-top: 100px;
+     }
+     .title3,.title4{
+      font-family: 'Balgis';
+         font-size: 96px;
+         font-weight: 400px;
+         font-style: normal;
+         line-height: 69px;
+         color: #E2AB3F;
+     }
+     .title3{
+       margin: 300px 0 0 466px;
+     }
+     .text11{
+      margin-left: 250px;
+     }
+     .title4{
+      margin: 52px 0 0 588px;
+     }
+     .text12{
+      font-size: 24px;
+         color: #000000;
+         line-height: 28px;
+         margin: 0 0 0 200px;
+     }
+     .text13 h3{
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 29px;
+      margin: 100px 0 0 476px;
+     }
+     input{
+      width: 383px;
+      height: 50px;
+      border: 1px solid #E2AB3F;
+      margin: 20px 0 0 464px;
+      padding-left: 20px;
+     }
+     .B{
+      margin: 50px 0 0 464px;
+     }
+     .text13 button{
+      margin: 20px 0 0 516px;
+      font-size: 24px;
+      background-color: #FFFFFF;
+     }
+     .foto5{
+      margin:-400px 0 0 201px;
+     }
+     footer{
+      background-image:url(DkY7k7JXoAArpNf.jpg);
+      background-repeat: no-repeat;
+         background-size: cover;
+         width: 1920px;
+         height: 1180px;
+         position: relative;
+         margin: 0;
+         padding: 0;
+     }
+   </style>
+</head>
+<body>
+   <header>
+      <div class="container">
+         <div class="wrapper">
+            <div class="ul">
+               <ul>
+                  <li class="ul2"><a href=""> Маршрут</a></li>
+                  <li class="ul4"><a href=""> Отель</a></li>
+                  <li class="ul3"><a href=""> Стоимость</a></li>
+                  <img src="Vector.png" alt="" class="phone">+38(066)555-777-6
+               </ul>
+            </div>
+         </div>
+         <div class="title">
+            <h1>Cappadocia</h1>
+            <span class="text">Эксклюзивный тур</span>
+         </div>
+
+      </div>
+      </div>
+   </header>
+   <section>
+      <div class="container">
+         <div class="title2">
+            <h1>Fairy tail</h1>
+         </div>
+         <span class="text2">Сказочная страна чудес</span>
+         <div class="contend">
+            <div class="foto"><img src="Rectangle 19.jpg" alt=""></div>
+            <div class="text3">Каппадокия - сказочная страна воздушных шаров, сырных домиков,<br> разноцветных дол ин и
+               волшебных рассветов! <br>
+               Сюда приезжают, чтобы увидеть природные чудеса, полетать на <br> воздушном шаре и конечно же сделать
+               миллион красивых фотографий!
+               <p>Участников тура ждёт профессиональная фотосессия от лучших<br> фотографов Каппадокии! <br>
+                  Ведь именно за волшебными фото на рассвете на фоне воздушных <br> шаров сюда приезжают люди со всего
+                  мира!
+               </p>
+               <h2>Также Вы увидите:</h2>
+               <p>Музей на открытом воздухе в Гёреме <br>
+                  Ущелье Ыхлара и монастырь Селиме <br>
+                  Подземные города <br>
+                  Крепость Учхисар <br>
+                  Зельве и Пашабаг</p>
+               <p>и многие другие достпримечательности.</p>
+               <p>Местная кухня — один из поводов посетить Каппадокию, здесь есть <br> рестораны на любой бюджет.</p>
+            </div>
+         </div>
+      </div>
+   </section>
+   <section>
+      <div class="container">
+         <div class="title2">
+            <h3>Our trip</h3>
+         </div>
+         <span class="text4">Маршрут</span>
+         <div class="contend">
+            <div class="text5">
+               <h2>День1</h2>
+               <p>Прилёт в Анкару <br>
+                  Трансфер в Каппадокию <br>
+                  Солёное озеро <br>
+                  Приезд в Гёреме <br>
+                  Ужин
+            </p>
+            <h2>День2</h2>
+            <p>Фотосессия <br>
+               Завтрак в отеле <br>
+               Дневной тур по Каппадокии <br>
+               Закат с панорамным видом <br>
+            </p>
+            <h2>День3</h2>
+            <p>Полёт на воздушном шаре <br>
+               Завтрак в отеле <br>
+               Экскурсии на выбор <br>
+            </p>
+            <h2>День4</h2>
+            <p>Свободное время, шоппинг <br>
+               Трансфер в Анкару <br>
+               Вылет в Киев</p>
+            <p><button>ЗАБРОНИРОВАТЬ</button></p>
+          </div>
+            <div class="foto2"><img src="Rectangle 22.png" alt=""></div>
+         </div>
+      </div>
+   </section>
+   <section>
+      <div class="container">
+         <div class="title2"><h3> Hotel</h3></div>
+         <span class="text6">Sultan Cave Suites</span>
+         <div class="contend">
+         <div class="foto3"><img src="Rectangle 24.png" alt=""></div>
+         <div class="text7">В этом уникальном отеле, расположенном на вершине холма Айдынлы, вы <br> можете забронировать высеченные в скале номера,
+             обставленные антикварной <br> мебелью со всей Турции. С солнечной террасы отеля открывается прекрасный <br> панорамный вид на Национальный парк Гереме.
+      <p>Большинство номеров отеля Sultan Cave Suites высечены в скале, что <br> обеспечивает прохладу и покой. 
+         Все номера оборудованы гостиной зоной и <br> современной ванной комнатой. В большинстве из них есть собственная терраса <br> или балкон.
+      </p>
+   <p>Отель Cave Suites Sultan располагает изысканным рестораном, где подают <br> фирменные блюда региона Каппадокии. После ужина, пройдя на террасу, вы <br> сможете заказать напиток и полюбоваться закатом солнца над деревней.
+   </p>
+<div class="foto4">
+   <img src="Rectangle 25.png" alt="">
+   <span><img src="Rectangle 26.png" alt=""> </span><br>
+   <img src="Rectangle 31.png" alt="">
+   <img src="Rectangle 32.png" alt="">
+</div></div>
+     </div>
+      </div>
+   </section>
+   <section>
+      <div class="container">
+         <div class="title2"><h3>Price</h3></div>
+         <span class="text8">Стоимость услуг</span>
+         <div class="contend">
+           <div class="text9"><h2>Включено</h2>
+            <p class="A">Проживание в двухместном номере в отеле с завтраками
+            </p>
+            <p>Индивидуальный трансфер для нашей группы из Анкары и обратно
+            </p>
+            <p>Экскурсия на Солёное озеро
+            </p>
+            <p>Индивидуальная дневная экскурсия по лучшим местам Каппадокии с <br> личным транспортом
+            </p>
+            <p>Фотосессия с профессиональным фотографом для каждой участницы <br>
+               (Несколько локаций, 5 лучших фото в обработке фотографа и весь <br> материал (до 100 фотографий)
+               </p>
+         </div>
+         <div  class="text10">
+            <h2>Не включено</h2>
+            <p class="A">Авиа Киев-Анкара-Киев (140-170$)</p>
+            <p>Обеды и ужины (150$ на поездку)
+            </p>
+            <p>Воздушный шар 200$</p>
+            <p>Дополнительные экскурсии (по желанию) от 30$
+            </p>
+         </div>
+         <div>
+            <div class="item"><img src="kisspng-flight-hot-air-balloon-computerФІМП-icons-aerostat-5afe08ad4b2f92 1.png" alt=""></div>
+            <div class="item2"><img src="kisspng-flight-hot-air-balloon-computerФІМП-icons-aerostat-5afe08ad4b2f92 3.png" alt=""></div>
+            <div class="item3"><img src="kisspng-flight-hot-air-balloon-computerФІМП-icons-aerostat-5afe08ad4b2f92 1.png" alt=""></div>
+         </div>
+         </div>
+      </div>
+   </section>
+   <section>
+      <div class="container">
+         <div class="title3">
+            <h1>1.07.2020</h1>
+            <span class="text11">Ближайшая дата тура </span>
+         </div>
+         <div class="title4">
+            <h1>490$</h1>
+            <span class="text12">Стоимость</span>
+         </div>
+         <div class="contend">
+            <div class="text13">
+             <h3>Оставить заявку или задать вопрос</h3>
+             <input placeholder="Имя" type="text" class="B"> <br>
+             <input placeholder="Телефон" type="text"> <br>
+             <button>ОСТАВИТЬ ЗАЯВКУ</button>
+            </div>
+            <div class="foto5"><img src="Rectangle 55.png" alt=""></div>
+         </div>
+      </div>
+   </section>
+   <footer>
+      <div class="container">
+        <div class="footer"></div> 
+      </div>
+   </footer>
+</body>
+
+</html>
